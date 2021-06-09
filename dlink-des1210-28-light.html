@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Config generator</title>
+        <link href= "css/style.css" rel="stylesheet">
+		<!-- ШАБЛОН УСТРОЙСТВА -->	
+	</head>
+	<body>
+		<div id="newconf" style="padding:20px;">
+			<!--ФОРМА ДЛЯ ЗАПОЛНЕНИЯ-->
+			<h3>Генератор конфигураций для dlink-des1210-28-light</h3>
+			<h3>Для DLINK DES1210-28 обязательно вставить: "20" в строку Присвоить VLAN "20", присвоить имя устройства в формате "sysname"! </h3>
+        <div class="main">
+            <div class= "field">
+			     <label for="text">Присвоить имя устройства:</label>
+			     <input type="text" id="sysname" maxlength="50" placeholder="abcd">
+            </div>    
+</br>
+            <div class= "field">
+			     <label for="text">Присвоить VLAN номер:</label>
+			     <input type="text" id="vlan" maxlength="4" placeholder="20">
+            </div>
+</br>
+            <div class= "field">
+                <label for="text">Присвоить следующий IP адрес:</label>
+			     <input type="text" id="ip" maxlength="15" placeholder="172.31.1.1">
+            </div>
+</br>
+            <div class= "field">
+			     <label for="text">Присвоить следующую маску:</label>
+			     <input type="text" id="mask" maxlength="15" placeholder="255.255.255.1">
+            </div>
+</br>
+            <div class= "field">
+			     <label for="text">Присвоить следующий шлюз:</label>
+			     <input type="text" id="gateway" maxlength="15" placeholder="172.31.1.0">
+            </div>
+</br>
+        </div>			
+<button type="submit" id="confcreate">Создать конфигурацию</button></br></br>
+			<!--РЕЗУЛЬТАТ-->
+			<h4>Конфиг для dlink-des1210-28-light | <button type="submit" id="download">Скачать конфиг</button></br></h4>
+			<div id="config"></div>
+		</div>
+	</body>
+</html>
+<script src="gen/dlink-des1210-28-light/config_tempalte.js"></script>
+<script src="gen/dlink-des1210-28-light/actions.js"></script>

@@ -1,0 +1,308 @@
+var panel1 = document.getElementById('panel1'),
+    panel2 = document.getElementById('panel2'),
+    panel3 = document.getElementById('panel3'),
+    panel4 = document.getElementById('panel4'),
+    panel5 = document.getElementById('panel5'),
+    panel6 = document.getElementById('panel6'),
+    panel7 = document.getElementById('panel7'),
+    panel8 = document.getElementById('panel8'),
+    panel9 = document.getElementById('panel9'),
+    panel10= document.getElementById('panel10'),
+    panel11 = document.getElementById('panel11'),
+    panel12 = document.getElementById('panel12'),
+    panel13 = document.getElementById('panel13'),
+    panel14 = document.getElementById('panel14'),
+    panel15 = document.getElementById('panel15');
+	panel16 = document.getElementById('panel16');
+
+
+  function showPanel1() {
+      panel1.className = "top";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+      
+  }
+
+  function showPanel2() {
+      panel1.className = "bottom";
+      panel2.className = "top";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel3() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "top";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel4() {
+      panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "top";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel5() {
+      panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "top";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel6() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "top";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel7() {
+      panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "top";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel8() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "top";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel9() {
+      panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "top";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel10() {
+      panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "top";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel11() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "top";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel12() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "top";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel13() {
+        panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "top";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel14() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "top";
+      panel15.className = "bottom";
+	  panel16.className = "bottom";
+  }
+function showPanel15() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "top";
+	  panel16.className = "bottom";
+  }
+function showPanel16() {
+       panel1.className = "bottom";
+      panel2.className = "bottom";
+      panel3.className = "bottom";
+      panel4.className = "bottom";
+      panel5.className = "bottom";
+      panel6.className = "bottom";
+      panel7.className = "bottom";
+      panel8.className = "bottom";
+      panel9.className = "bottom";
+      panel10.className = "bottom";
+      panel11.className = "bottom";
+      panel12.className = "bottom";
+      panel13.className = "bottom";
+      panel14.className = "bottom";
+      panel15.className = "bottom";
+	  panel16.className = "top";
+  }

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Config generator</title>
+        <link href="css/style.css" rel="stylesheet">	
+	</head>
+	<body>
+        <h3>Инструкция по сбросу на заводские настройки<br> коммутаторов АЛСиТЕК </h3>
+        <p>Во время загрузки коммутатора пользователю предлагается меню загрузки:</p>
+        <pre>
+        Select startup image:
+        1 - image1
+        2 - image2
+        3 - erase startup-config
+        Default: image1
+        Select (1, 2, 3):</pre>
+        <p>Очистить конфигурацию
+            коммутатора, введя цифру 3 и нажав Enter. В этом случае на коммутаторе будет
+            удалена конфигурация startup-config, и загрузка будет произведена с чистой
+            конфигурацией.</p>
+        <p>Для очистки текущей конфигурации (runnig-config) выполняется следующая команда:</p>
+        <pre>
+        (als_sw) #clear config</pre>
+        <p>Команда запрашивает подтверждение на выполнение:</p>
+        <pre>Are you sure you want to clear the configuration? (y/n):</pre>
+        <p>Подтверждением является латинская буква y, любой другой символ
+            рассматривается как отказ от выполнения.
+            После получения подтверждения производится очистка конфигурации и
+            применение чистой конфигурации, в результате чего пользователь получает
+            приглашение для авторизации:</p>
+        <pre>
+        Are you sure you want to clear the configuration? (y/n):</pre>
+        <pre>
+        Clearing configuration. Please wait for login prompt.</pre>
+        <pre>
+        User:</pre>
+        <p>После очистки конфигурации будут удалены все настройки.</p> 
+        <br>
+        <br>
+        <br>
+	</body>
+</html>

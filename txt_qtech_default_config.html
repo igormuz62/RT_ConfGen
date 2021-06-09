@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Config generator</title>
+        <link href="css/style.css" rel="stylesheet">	
+	</head>
+	<body>
+        <h3>Инструкция по сбросу на заводские настройки<br> коммутаторов QTECH </h3>
+        <p>Вариант №1:</p>
+        <p>Пошаговая инструкция.</p>
+        <p>1. Подключаемся консольным кабелем и включаем коммутатор.</p>
+        <pre>
+        System is booting, please wait...
+        Testing RAM...
+        0x04000000 RAM OK.
+        </pre>
+        <p>2. При загрузке нажимаем ctrl+b чтобы попасть в меню bootrom-а.</p>
+        <pre>
+        Attaching to file system ... done.
+        199.76 BogoMIPS
+        Version: 5.1.2
+        Creation date: Sep  8 2012, 23:50:07
+        </pre>
+        <p>3. Дожно появиться приглашение вида "[Boot]:", что ознаяает что мы зашли в bootrom.</p>
+        <pre>
+        Attached TCP/IP interface to netdrv0.
+        [Boot]:
+        </pre>
+        <p>4. Ищем наш конфигурационный файл с которым стартует коммутатор, с помощю команды "show boot-files".</p>
+        <pre>
+        [Boot]: show boot-files
+        The primary img file : flash:/nos.img
+        The backup img file : flash:/nos.img
+        The startup-config file: flash:/startup.cfg
+        </pre>
+        <p>5. В нашем случае это файл flash:/startup.cfg, его нам надо удалить с помощю команды "delete [name_file]".</p>
+        <pre>
+        [Boot]: delete startup.cfg
+        Delete file flash:/startup.cfg? [Y/N]:[N] y
+        Deleted file flash:/startup.cfg.
+        </pre>
+        <p>6. Вот и все, осталось перезагрузиться с помощю команды "reload".</p>
+        <pre>
+        [Boot]: reload</pre>
+        <p>Коммутатор загрузиться с дефолтными настройками, теперь можно заходить и заново конфигурить коммутатор.</p>
+        <br>
+        <br>
+        <p>Вариант №2 (попасть в в меню bootrom-а):</p>
+        <pre>u-boot></pre>
+        В командной строке boot меню необходимо ввести команду:
+
+        <pre>sf probe; sf erase 0x000003e00000 0x200000; reset</pre>
+        <p>Где происходит чтение флеш-памяти; затирание начиная с указанной области памяти (0x000003e00000) некоторое количество ячеек (0x200000); перезагрузка.</p>
+
+После перезагрузки коммутатор вернется к своим начальным заводским настройкам.
+Boot# bootloader startup-config null
+2772 bytes written, 0 bytes skipped
+default factory-config will be used.
+
+Boot# reboot
+System is initializing...
+
+
+Boot version: 2011.12.17
+Press Ctrl-B to enter Boot system...
+System self-test...
+Test OK.
+
+        <br>
+        <br>
+        <br>
+	</body>
+</html>

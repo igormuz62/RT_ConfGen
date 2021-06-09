@@ -1,0 +1,75 @@
+<p>Подключаемся к коммутатору через консоль и включаем питание.</p>
+<p> </p>
+<p>Дожидаемся следующего пиглашения:</p>
+<pre>Press Ctrl+B to enter BOOTROM menu ... 2</pre>
+<p>Нажимаем Ctrl+B. Коммутатор для доступа в BOOTROM требует ввод пароля.</p>
+<pre>password:</pre>
+<p>В зависимости от версии прошивки на коммутаторе пароль может быть huawei или www.huawei.com или <span id="cloak99dddd52901981ede2240f006d8835c8">Этот адрес электронной почты защищён от спам-ботов. У вас должен быть включен JavaScript для просмотра.</span><script type='text/javascript'>
+				document.getElementById('cloak99dddd52901981ede2240f006d8835c8').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy99dddd52901981ede2240f006d8835c8 = 'Adm&#105;n' + '&#64;';
+				addy99dddd52901981ede2240f006d8835c8 = addy99dddd52901981ede2240f006d8835c8 + 'h&#117;&#97;w&#101;&#105;' + '&#46;' + 'c&#111;m';
+				var addy_text99dddd52901981ede2240f006d8835c8 = 'Adm&#105;n' + '&#64;' + 'h&#117;&#97;w&#101;&#105;' + '&#46;' + 'c&#111;m';document.getElementById('cloak99dddd52901981ede2240f006d8835c8').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy99dddd52901981ede2240f006d8835c8 + '\'>'+addy_text99dddd52901981ede2240f006d8835c8+'<\/a>';
+		</script></p>
+<pre>BOOTROM MENU
+1. Boot with default mode
+2. Enter serial submenu
+3. Enter startup submenu
+4. Enter ethernet submenu
+5. Enter filesystem submenu
+6. Modify BOOTROM password
+7. Reboot
+Enter your choice(1-7): 5
+</pre>
+<p>Переходим в меню для работы с файловой системой, для этого вводим "5".</p>
+<pre>FILESYSTEM SUBMENU
+1. Erase Flash
+2. Format flash
+3. Delete file from Flash
+4. Rename file from Flash
+5. Display Flash files
+6. Return to main menu
+Enter your choice(1-6): 3 
+</pre>
+<p>Удаляем файл конфигурации с флэшки, для этого вводим "3" и ищем файл с расширением ".cfg"</p>
+<pre>No.File Size(bytes) Created Date File Name
+=================================================================
+1: 1403 bytes Jan 01 2008 00:05:36 private-data.txt
+2: 836 bytes Jan 01 2008 00:03:51 rr.dat
+3: 836 bytes Jan 01 2008 00:03:52 rr.bak
+4: 689 bytes Jan 01 2008 00:05:30 vrpcfg.zip
+5: 8249540 bytes Jan 01 2008 00:14:33 S2352_S3352-V100R005C01SPC100.cc
+6: 626426 bytes Jan 01 2008 00:10:46 s23_33_53-v100r005sph008.pat
+7: 12240 bytes Jan 01 2008 00:11:28 $_patchstate_reboot
+8: 7290 bytes Nov 26 2012 09:29:55 config.cfg  &lt;-- Нужный нам файл
+BE CAREFUL!
+This may cause your system fail to start!
+Please choose the file you want to delete: config.cfg 
+</pre>
+<p>Для удаления вводим имя найденного файла "config.cfg". Подтверждаем удаление - вводим "y".</p>
+<pre>delete it? Yes or No(Y/N)y
+Deleting file ....done
+</pre>
+<pre>FILESYSTEM SUBMENU
+1. Erase Flash
+2. Format flash
+3. Delete file from Flash
+4. Rename file from Flash
+5. Display Flash files
+6. Return to main menu
+Enter your choice(1-6): 6 
+</pre>
+<p>Переходим в главное меню, для этого вводим "6".</p>
+<pre>BOOTROM MENU
+1. Boot with default mode
+2. Enter serial submenu
+3. Enter startup submenu
+4. Enter ethernet submenu
+5. Enter filesystem submenu
+6. Modify BOOTROM password
+7. Reboot
+Enter your choice(1-7): 7</pre>
+<p>Перезагружаем коммутатор, для этого вводим "7".</p>
+<pre>Reboot...</pre>
+<p>Вот и все. Коммутатор перезагрузится с дефолтными настройками.</p>	</div>

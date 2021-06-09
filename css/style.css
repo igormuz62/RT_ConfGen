@@ -1,0 +1,381 @@
+/*Общие стили на станицы*/
+body {
+    background-color: whitesmoke;
+    float: left;
+    font-family: lucida console;
+    box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+}
+.newconf {
+    background-color: red;
+}
+.gen {
+    float: left;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px 5px;
+}
+.txt {  
+    float: right;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+h3 {
+    border:1px solid black;
+    border-radius: 5px;
+    border-color: darkblue;
+    color: orangered;
+    text-align: center
+}
+.footer {
+        position:fixed;
+        bottom:0;
+        border: 2px solid black;
+        border-radius: 1px;
+        border-color: darkblue;
+        color: black;
+        background-color: #FF4500;
+        text-align: left;
+        height: 20px;
+        width: 97%;
+        margin: 2px 2px;
+        padding: 2px 2px;
+        font-size: 20px;
+}
+pre {
+    border: 1px solid black;;
+}
+a {
+    color: black;
+    height: 40px;
+    width: 40px;
+}
+/*Поля форм ввода*/
+.field {
+    clear:both; 
+    text-align:right;
+    line-height:25px;
+}
+label {
+    float:left;
+    padding-right:10px;
+}
+.main {
+    float:left
+}
+
+#sysname {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#vlan {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#ip {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#mask {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#gateway {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#pass {
+    padding: 10px;
+    margin:5px 0;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+/*Стили для кнопок*/
+button {
+  appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+}
+/*Стили для ссылок на оборудование*/
+.als241-8 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.als241-16 {
+      background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.als241-24 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.als241-24 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.als24110 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.dlink1210-10 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.dlink1210-28 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.dlink3200 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.eltex{
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.huawei-s2326 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.huawei-s2328 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.qtech-2850 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.qtech-3500 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.qtech-3750-10 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.qtech-3750-28 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.qtech-4610 {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.topaz {
+    background-color: #FF4500;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 20px
+}
+.txt0 {background-color: #008000;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 40px}
+.txt1 {background-color: #3F51B5;
+      border: none;
+      color: white;
+      padding: 2px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      width:98%;
+      height: 40px}

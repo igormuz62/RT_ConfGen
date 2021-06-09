@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Config generator</title>
+        <link href="css/style.css" rel="stylesheet">	
+	</head>
+	<body>
+        <h3>Инструкция по сбросу на заводские настройки<br> коммутаторов ТОПАЗ </h3>
+        <p>Во время загрузки коммутатора нажать Enter или Esc.</p>
+        <pre>
+        Boot1 Checksum Test...............................PASS
+
+        Boot2 Checksum Test...............................PASS
+
+        Flash Image Validation Test.......................PASS
+
+        BOOT Software Version 1.0.2.1 Built  06-Sep-2013  16:39:03
+
+        Networking device with CPU based on arm926ejs core. 256 MByte SDRAM. 
+        I-Cache 16 KB. D-Cache 16 KB. L2 Cache 256 KB. Cache Enabled.
+
+        MAC Address   :  68:eb:c5:1a:73:40.
+
+        Autoboot in 2 seconds - press RETURN or Esc. to abort and enter prom.
+
+        You have selected to enable boot menu!</pre>
+        <p>Ввести пароль: angstrem</p>
+        <pre>Enter password : ********</pre>
+        <p>Открывается меню. </p>
+        <pre>
+        Startup Menu
+        [1]  Download Software
+        [2]  Erase Flash File
+        [3]  Password Recovery Procedure
+        [4]  Set Terminal Baud-Rate
+        [5]  Stack menu
+        [6]  Change boot password
+        [7]  Back
+        Enter your choice or press 'ESC' to exit:</pre>
+        <p>Нажать: [3]  Password Recovery Procedure.</p>
+        <p>Дождаться полной перезагрузки коммутатора.</p>
+        <p>После перезагрузки ввести: enable</p>
+        <pre>
+        turlatovo-y15-08>enable</pre>
+        <p>Ввести delete startup-config</p>
+        <pre>
+        turlatovo-y15-08#delete startup-config</pre>
+        <p>Подтвердить команду Y</p>
+        <pre>
+        Delete startup-config? (Y/N)[N] Y</pre>
+        <p>Перезагрузить коммутатор командой RELOAD, подвердить Y.</p>
+        <pre>
+        turlatovo-y15-08#reload</pre>
+        <pre>
+        You haven't saved your changes. Are you sure you want to continue ? (Y/N)[N] Y
+        This command will reset the whole system and disconnect your current session. Do you want to continue ? (Y/N)[N] 
+        Y
+        Shutting down ...</pre>
+        <pre>
+        show run- посмотреть настройки
+        delete startup-config- удалить файл концигурации
+        write mem- записать конфигурацию
+        reload-  перезагрузка коммутатора</pre>
+        <br>
+        <br>
+        <br>
+	</body>
+</html>

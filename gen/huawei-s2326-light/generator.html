@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Config generator</title>
+		<!-- ШАБЛОН УСТРОЙСТВА -->
+		<script src="config_tempalte.js"></script>
+	</head>
+	<body>
+		<div id="newconf" style="padding:20px;">
+			<!--ФОРМА ДЛЯ ЗАПОЛНЕНИЯ-->
+			<h3>Генератор конфигураций</h3>
+			<h3>Для HUAWEI S2326 обязательно вставить пароль: D/22a6V3a!L\^:@]CG5HT_Q!!</h3>
+			<label for="text">Присвоить имя устройства:</label>
+			<input type="text" id="sysname" maxlength="50" placeholder="abcd"></br>
+			<label for="text">Присвоить VLAN номер:</label>
+			<input type="text" id="vlan" maxlength="4" placeholder="20"></br>
+			<label for="text">Присвоить следующий IP адрес:</label>
+			<input type="text" id="ip" maxlength="15" placeholder="172.31.1.1"></br>
+			<label for="text">Присвоить следующую маску:</label>
+			<input type="text" id="mask" maxlength="15" placeholder="255.255.255.1"></br>
+			<label for="text">Присвоить следующий шлюз:</label>
+			<input type="text" id="gateway" maxlength="15" placeholder="172.31.1.0"></br>
+			<label for="text">Присвоить пароль для local-user anklav:</label>
+			<input type="text" id="pass" maxlength="50" placeholder="abcd"></br>
+			<button type="submit" id="confcreate">Создать конфигурацию</button></br></br>
+			<!--РЕЗУЛЬТАТ-->
+			<h4>Конфиг для huawei-s2326-light | <button type="submit" id="download">Скачать конфиг</button></br></h4>
+			<div id="config"></div>
+		</div>
+	</body>
+</html>
+<script src="actions.js"></script>

@@ -1,0 +1,31 @@
+<p>Пошаговая инструкция.</p>
+<p>1. Подключаемся консольным кабелем и включаем коммутатор.</p>
+<pre>System is booting, please wait...
+Testing RAM...
+0x04000000 RAM OK.
+</pre>
+<p>2. При загрузке нажимаем ctrl+b чтобы попасть в меню bootrom-а.</p>
+<pre>Attaching to file system ... done.
+199.76 BogoMIPS
+Version: 5.1.2
+Creation date: Sep  8 2012, 23:50:07
+</pre>
+<p>3. Дожно появиться приглашение вида "[Boot]:", что ознаяает что мы зашли в bootrom.</p>
+<pre>Attached TCP/IP interface to netdrv0.
+[Boot]:
+</pre>
+<p>4. Ищем наш конфигурационный файл с которым стартует коммутатор, с помощю команды "show boot-files".</p>
+<pre>[Boot]: show boot-files
+The primary img file : flash:/nos.img
+The backup img file : flash:/nos.img
+The startup-config file: flash:/startup.cfg
+</pre>
+<p>5. В нашем случае это файл flash:/startup.cfg, его нам надо удалить с помощю команды "delete [name_file]".</p>
+<pre>[Boot]: delete startup.cfg
+Delete file flash:/startup.cfg? [Y/N]:[N] y
+Deleted file flash:/startup.cfg.
+</pre>
+<p>6. Вот и все, осталось перезагрузиться с помощю команды "reload".</p>
+<pre>[Boot]: reload
+</pre>
+<p>Коммутатор загрузиться с дефолтными настройками, теперь можно заходить и заново конфигурить коммутатор.</p>	</div>
